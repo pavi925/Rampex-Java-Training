@@ -7,7 +7,7 @@ public class Calculator {
         int a = sc.nextInt();
         System.out.print("Enter a number,B: ");
         int b = sc.nextInt();
-        int choice;;
+        int choice;
         do {
             System.out.println("\nWelcome User");
             System.out.println("1. Add");
