@@ -1,5 +1,5 @@
 package Day_8.ClassTask;
-import java.util.Arrays;
+
 import java.util.Scanner;
 public class ParallelArray {
     public static void main(String[] args) {
