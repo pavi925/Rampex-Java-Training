@@ -1,4 +1,4 @@
-package HomeWork.Day_6;
+package Day_6.HomeTask;
 import java.util.Scanner;
 public class Calculator {
     public static void main(String[] args) {
