@@ -1,6 +1,5 @@
 package Day_9.ClassTask;
 
-import java.util.Scanner;
 public class FindMissingNumbers {
     public static void main(String[] args){
         int n=6;
