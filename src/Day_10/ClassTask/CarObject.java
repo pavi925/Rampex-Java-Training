@@ -15,6 +15,10 @@ public class CarObject {
         c1.accelerate();
         c1.accelerate();
         c1.accelerate();
+        c2.accelerate();
+        c1.brake();
+        c2.brake();
+        System.out.println(c2.model);
 
     }
 }
