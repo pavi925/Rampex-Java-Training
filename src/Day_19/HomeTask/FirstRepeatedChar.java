@@ -1,18 +1,25 @@
 package Day_19.HomeTask;
 
-import java.util.HashSet;
-public class FirstRepeatedChar{
+import java.util.HashMap;
+import java.util.ArrayList;
+class DuplicateWordsUsingHashMap {
     public static void main(String[] args) {
-        String str = "programming";
-        HashSet<Character> set = new HashSet<>();
-        for (int i = 0; i < str.length(); i++) {
-            char ch = str.charAt(i);
-            if (set.contains(ch)) {
-                System.out.println(ch);
-                break;
+        String sentence = "java is easy and java is powerful and java is popular";
+        String[] words = sentence.split(" ");
+        HashMap<String, Integer> hm = new HashMap<>();
+        for (int i = 0; i < words.length; i++) {
+            if (hm.containsKey(words[i])) {
+                hm.put(words[i], hm.get(words[i]) + 1);
             } else {
-                set.add(ch);
+                hm.put(words[i], 1);
             }
         }
+        ArrayList<String> duplicates = new ArrayList<>();
+        for (String word : hm.keySet()) {
+            if (hm.get(word) > 1) {
+                duplicates.add(word);
+            }
+        }
+        System.out.println(duplicates);
     }
 }
